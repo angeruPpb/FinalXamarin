@@ -1,0 +1,93 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="confe.Curriculum"
+             NavigationPage.HasNavigationBar="False">
+
+    <ScrollView>
+        <StackLayout BackgroundColor="#585858">
+            <StackLayout>
+                <Image Source="https://i.ibb.co/kxw0YMs/avatar-1.png"
+                       Margin="0,35,0,5"/>
+                <Label x:Name="F_nombre"
+                       FontAttributes="Italic"
+                       HorizontalOptions="Center"
+                       FontSize="40"
+                       TextColor="White"/>
+                <Label x:Name="F_ocupacion"
+                       HorizontalOptions="Center"
+                       FontSize="20"
+                       TextColor="White"/>
+            </StackLayout>
+            <Frame BackgroundColor="Bisque"
+                   Margin="20"
+                   CornerRadius="20"
+                   HasShadow="False">
+                <StackLayout>
+                    <Label Text="Contacto" FontAttributes="Bold"/>
+                    <Frame>
+                        <StackLayout>
+                            <Label x:Name="F_email"/>
+                            <Label x:Name="F_telefono"/>
+                            <Label x:Name="F_pais"/>
+                        </StackLayout>
+                    </Frame>
+                    <Label Text="Idiomas" FontAttributes="Bold"/>
+                    <Frame>
+                        <StackLayout>
+                            <Label Text="Español: Nativo"/>
+                            <Label x:Name="F_level"/>
+                            <Label Text="Frances: Intermedio (B2)"/>
+                        </StackLayout>
+                    </Frame>
+                    <Label Text="Aptitudes" FontAttributes="Bold"/>
+                    <Frame>
+                        <StackLayout>
+                            <Label Text="Inteligencia Emocional"/>
+                            <Label Text="Trabajo en Equipo"/>
+                            <Label Text="Capacidad Analitica"/>
+                        </StackLayout>
+                    </Frame>
+                    <Label Text="Otros intereses" FontAttributes="Bold"/>
+                    <Frame>
+                        <StackLayout>
+                            <Label Text="Creador de Yincanas"/>
+                            <Label Text="Paseos Ecologicos"/>
+                            <Label Text="Lectura Grupal"/>
+                        </StackLayout>
+                    </Frame>
+                    <Button Text="Regresar"
+                            x:Name="btnregresar"
+                            Clicked="btnregresar_Clicked"/>
+                    <Button Text="Enviar"
+                            x:Name="btnenviar"
+                            Clicked="btnenviar_Clicked"/>
+                </StackLayout>
+            </Frame>
+            <Frame BackgroundColor="#f2f3f3"
+                       Margin="20"
+                       CornerRadius="20"
+                       HasShadow="False">
+                <StackLayout >
+                    <Label Text="Perfil" FontAttributes="Bold"/>
+                    <Frame>
+                        <StackLayout>
+                            <Label x:Name="F_edad"/>
+                            <Label x:Name="F_perfil"/>
+                        </StackLayout>
+                    </Frame>
+                    <Label Text="Experiencia Laboral" FontAttributes="Bold"/>
+                    <Frame>
+                        <StackLayout>
+                            <Label Text="Trabajador Social" FontAttributes="Italic"/>
+                            <Label Text="* Coordinador y mediador entre los equipos de ayuda psicologica a niños en exclusion social"/>
+                            <Label Text="* Monitor de ejercicios fisicos para adolescentes"/>
+                            <Label Text="* Programar diferentes actividades extracurriculares en los involucrados"/>
+                        </StackLayout>
+                    </Frame>
+                    
+                </StackLayout>
+            </Frame>
+        </StackLayout>
+    </ScrollView>
+</ContentPage>
